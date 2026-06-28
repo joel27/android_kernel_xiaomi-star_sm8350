@@ -1,0 +1,1978 @@
+drivers/input/touchscreen/fujitsu_ts.c: * fujitsu_disconnect() is the opposite of fujitsu_connect()
+drivers/input/touchscreen/fujitsu_ts.c: * fujitsu_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/fujitsu_ts.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/elo.c: * elo_disconnect() is the opposite of elo_connect()
+drivers/input/touchscreen/elo.c: * elo_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/elo.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/mtouch.c: * mtouch_disconnect() is the opposite of mtouch_connect()
+drivers/input/touchscreen/mtouch.c: * mtouch_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/mtouch.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/hp680_ts_input.c:	hp680_ts_dev = input_allocate_device();
+drivers/input/touchscreen/touchwin.c: * tw_disconnect() is the opposite of tw_connect()
+drivers/input/touchscreen/touchwin.c: * tw_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/touchwin.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_read_pid();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:		nvt_bootloader_reset();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_bootloader_reset(); // NOT in retry loop
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:		nvt_sw_reset_idle();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:			nvt_stop_crc_reboot();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:		pr_err("[EX]: sysfs_create_group() failed!!\n");
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	pr_info("[EX]: sysfs_create_group() succeeded!!\n");
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	ts->input_dev = input_allocate_device();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	// no need to set ABS_MT_TRACKING_ID, input_mt_init_slots() already set it
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_bootloader_reset();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_get_fw_info();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	ret = nvt_flash_proc_init();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	ret = nvt_extra_proc_init();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	ret = nvt_mp_proc_init();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:nvt_mp_proc_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:nvt_extra_proc_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:nvt_flash_proc_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_mp_proc_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_extra_proc_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_flash_proc_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_mp_proc_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_extra_proc_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	nvt_flash_proc_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:	// nvt_bootloader_reset();
+drivers/input/touchscreen/nt36xxx/nt36xxx.c:		nvt_bootloader_reset();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	if (Resume_PD()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	nvt_sw_reset_idle();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	nvt_stop_crc_reboot();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	ret = Init_BootLoader();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	ret = Resume_PD();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	ret = Erase_Flash();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	ret = Write_Flash();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	ret = Verify_Flash();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	nvt_bootloader_reset();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	nvt_get_fw_info();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	ret = Init_BootLoader();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	ret = Resume_PD();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	nvt_sw_reset_idle();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	ret = Check_CheckSum();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:		Update_Firmware();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	} else if ((ret == 0) && (Check_FW_Ver() == 0)) { // (fw checksum not match) && (bin fw version >= ic fw version)
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:		Update_Firmware();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	} else if (nvt_check_flash_end_flag()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:		Update_Firmware();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:		nvt_bootloader_reset();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:			Update_Firmware();
+drivers/input/touchscreen/nt36xxx/nt36xxx_fw_update.c:	update_firmware_release();
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_get_fw_pipe() == 0)
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_clear_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_polling_hand_shake_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_get_fw_info()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_get_fw_pipe() == 0)
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_clear_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	nvt_enable_open_test();
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_polling_hand_shake_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_get_fw_pipe() == 0)
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_get_fw_pipe() == 0)
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_clear_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	nvt_enable_short_test();
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_polling_hand_shake_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_get_fw_pipe() == 0)
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_get_fw_pipe() == 0)
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_get_fw_info()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:		nvt_print_criteria();
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_clear_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	if (nvt_check_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	nvt_bootloader_reset();
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:		if(nvt_mp_buffer_init()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_mp_ctrlram.c:	nvt_mp_buffer_deinit();
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_get_fw_info()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_clear_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_check_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_get_fw_info()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_clear_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_check_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_get_fw_info()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_get_fw_pipe() == 0)
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_clear_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_check_fw_status()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_get_fw_info()) {
+drivers/input/touchscreen/nt36xxx/nt36xxx_ext_proc.c:	if (nvt_get_fw_pipe() == 0)
+drivers/input/touchscreen/atmel_mxt_ts.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/mc13783_ts.c:	idev = input_allocate_device();
+drivers/input/touchscreen/touchit213.c: * touchit213_disconnect() is the opposite of touchit213_connect()
+drivers/input/touchscreen/touchit213.c: * touchit213_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/touchit213.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/zylonite-wm97xx.c:	if (cpu_is_pxa320())
+drivers/input/touchscreen/ucb1400_ts.c:	mb();
+drivers/input/touchscreen/ucb1400_ts.c:	mb();
+drivers/input/touchscreen/ucb1400_ts.c:	mask = probe_irq_on();
+drivers/input/touchscreen/ucb1400_ts.c:		cpu_relax();
+drivers/input/touchscreen/ucb1400_ts.c:	ucb->ts_idev = input_allocate_device();
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:	tx_num = pdata->touch_data->get_touch_tx_num();
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:	rx_num = pdata->touch_data->get_touch_rx_num();
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:struct class *get_xiaomi_touch_class()
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:struct device *get_xiaomi_touch_dev()
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%c", pdata->touch_data[0]->panel_vendor_read());
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%c", pdata->touch_data[0]->panel_color_read());
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%c", pdata->touch_data[0]->panel_display_read());
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%c", pdata->touch_data[0]->touch_vendor_read());
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%d\n", pdata->touch_data[0]->get_touch_tx_num());
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%d\n", pdata->touch_data[0]->get_touch_rx_num());
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%d\n", pdata->touch_data[0]->get_touch_x_resolution());
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%d\n", pdata->touch_data[0]->get_touch_y_resolution());
+drivers/input/touchscreen/xiaomi/xiaomi_touch.c:int update_touch_rawdata()
+drivers/input/touchscreen/mcs5000_ts.c:		pdata->cfg_pin();
+drivers/input/touchscreen/da9052_tsi.c:	mb();
+drivers/input/touchscreen/da9052_tsi.c:	mb();
+drivers/input/touchscreen/da9052_tsi.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/auo-pixcir-ts.c:	mb();
+drivers/input/touchscreen/auo-pixcir-ts.c:	mb();
+drivers/input/touchscreen/inexio.c: * inexio_disconnect() is the opposite of inexio_connect()
+drivers/input/touchscreen/inexio.c: * inexio_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/inexio.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/gunze.c: * gunze_disconnect() is the opposite of gunze_connect()
+drivers/input/touchscreen/gunze.c: * gunze_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/gunze.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/sur40.c:	new_buf->vb.vb2_buf.timestamp = ktime_get_ns();
+drivers/input/touchscreen/sur40.c:	poll_dev = input_allocate_polled_device();
+drivers/input/touchscreen/cyttsp4_spi.c:		dev_dbg(dev, "%s: spi_sync() error %d, len=%d, op=%d\n",
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:			apen_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:			apen_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:		apen_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:	retval = apen_reg_init();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:		apen_report();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:	retval = apen_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:	apen->apen_dev = input_allocate_device();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:	apen_set_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:	apen_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:	apen_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:	apen_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:	apen_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_active_pen.c:	apen_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg_read_valid_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg_read_valid_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg_read_valid_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg_read_valid_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_write_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_write_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_write_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_write_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_write_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_read_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_write_tuning_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_reg_init();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:		udg_report();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	retval = udg_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg->udg_dev = input_allocate_device();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg_write_template_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg_write_valid_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg_write_template_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_gesture.c:	udg_write_valid_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_wait_for_command_completion();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_check_for_idle_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_do_preparation();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_check_for_idle_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_check_for_idle_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_check_for_idle_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_check_for_idle_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_wait_for_command_completion();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	test_set_report_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_f55_set_queries();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_f55_set_controls();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_set_queries();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_set_controls();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	test_set_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_set_sysfs();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	test_free_control_mem();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	test_remove_sysfs();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	test_free_control_mem();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	test_free_control_mem();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_set_queries();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	retval = test_set_controls();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	test_set_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	test_free_control_mem();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_test_reporting.c:	test_remove_sysfs();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:			prox_hover_finger_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	retval = prox_reg_init();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	retval = prox_set_hover_finger_en();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	retval = prox_set_hover_finger_en();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:		prox_hover_finger_report();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	retval = prox_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	retval = prox_set_hover_finger_en();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	prox->prox_dev = input_allocate_device();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	prox_set_params();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	prox_hover_finger_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	prox_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	prox_set_hover_finger_en();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	prox_hover_finger_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	prox_set_hover_finger_en();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	prox_hover_finger_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_proximity.c:	prox_hover_finger_lift();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_rmi_dev.c:	retval = rmidev_create_device_class();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_core.c:	rmi4_data->input_dev = input_allocate_device();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_core.c:	rmi4_data->stylus_dev = input_allocate_device();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_core.c:	retval = synaptics_rmi4_bus_init();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_core.c:	synaptics_rmi4_bus_exit();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		fwu_parse_image_header_10();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		fwu_parse_image_header_05_06();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		fwu_compare_partition_tables();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:			fwu_read_flash_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_read_f34_v7_queries();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_read_f34_v5v6_queries();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_get_device_config_id();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:			fwu_recovery_check_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_read_flash_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_read_f34_queries();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_erase_guest_code();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	return fwu_write_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	return fwu_write_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	return fwu_write_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_flash_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_erase_bootloader();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_bootloader();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_utility_parameter();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_check_ui_firmware_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_check_ui_configuration_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:			retval = fwu_check_dp_configuration_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:			retval = fwu_check_guest_code_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_check_bl_configuration_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_erase_all();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_bl_area_v7();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_partition_table_v7();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_partition_table_v8();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_dp_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_ui_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_guest_code();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_firmware();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_enter_flash_prog();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_do_read_tddi_lockdown_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_enter_flash_prog();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_erase_lockdown_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_tddi_lockdown_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_enter_flash_prog();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_lockdown();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_enter_flash_prog();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_lockdown();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_enter_flash_prog();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_parse_image_info();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_enter_flash_prog();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_check_guest_code_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_erase_guest_code();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_write_guest_code();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_parse_image_info();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_check_ui_configuration_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_check_dp_configuration_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_check_pm_configuration_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_enter_flash_prog();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_ui_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_dp_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_pm_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_parse_image_info();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_read_flash_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	flash_area = fwu_go_nogo();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_enter_flash_prog();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_do_reflash();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_do_restore_f51_cal_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_check_ui_configuration_size();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_erase_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_write_ui_configuration();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_do_restore_f51_cal_data();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:			retval = fwu_do_lockdown_v5v6();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:			retval = fwu_do_lockdown_v7();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_recovery_erase_completion();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_recovery_check_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_recovery_check_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_recovery_erase_all();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_recovery_write_chunk();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_recovery_reset();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_start_recovery();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_start_reflash();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_start_recovery();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_start_write_config();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_do_read_config();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_start_write_guest_code();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		fwu_read_flash_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_read_f34_queries();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_get_device_config_id();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	fwu_read_flash_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		retval = fwu_f51_force_data_init();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	retval = fwu_scan_pdt();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		fwu_read_f34_queries();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:	fwu_read_flash_status();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_fw_update.c:		fwu_f51_force_data_init();
+drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_video.c:	retval = video_scan_pdt();
+drivers/input/touchscreen/tsc200x-core.c: * 4) GPIO IRQ is received and tsc200x_irq_thread() is scheduled.
+drivers/input/touchscreen/tsc200x-core.c: * 5) tsc200x_irq_thread() queues up a transfer to fetch the x, y, z1, z2
+drivers/input/touchscreen/tsc200x-core.c: * 6) tsc200x_irq_thread() reports coordinates to input layer and sets up
+drivers/input/touchscreen/tsc200x-core.c: *    tsc200x_penup_timer() to be called after TSC200X_PENUP_TIME_MS (40ms).
+drivers/input/touchscreen/usbtouchscreen.c:				"%s - type->init() failed, err: %d\n",
+drivers/input/touchscreen/usbtouchscreen.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/usbtouchscreen.c:				"%s - type->alloc() failed, err: %d\n",
+drivers/input/touchscreen/usbtouchscreen.c:				"%s - type->init() failed, err: %d\n",
+drivers/input/touchscreen/penmount.c: * pm_mtevent() sends mt events and also emulates pointer movement
+drivers/input/touchscreen/penmount.c: * pm_checkpacket() checks if data packet is valid
+drivers/input/touchscreen/penmount.c: * pm_disconnect() is the opposite of pm_connect()
+drivers/input/touchscreen/penmount.c: * pm_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/penmount.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/jornada720_ts.c:		jornada_ssp_start();
+drivers/input/touchscreen/jornada720_ts.c:		jornada_ssp_end();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:struct device *getDev()
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		return &(getClient()->dev);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:struct i2c_client *getClient()
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:struct spi_device *getClient()
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 2);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:	resetErrorList();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 3);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsGesture.c:	res = fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsGesture.c:	ret = fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTest.c:	res |= fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTest.c:		ret = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTest.c:		dev = getDev();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsError.c:	if (getDev() != NULL)
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsError.c:		info = dev_get_drvdata(getDev());
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsError.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsError.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsError.c:	int count = getErrorListCount();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsError.c:	int count = getErrorListCount();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTime.c:	w->start = ktime_get();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTime.c:	w->end = ktime_get();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	ret |= resetErrorList();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	ret |= initTestToDo();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:		resetErrorList();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:		fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:			disable_irq(getClient()->irq);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:			disable_irq_nosync(getClient()->irq);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:			enable_irq(getClient()->irq);
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFrame.c:		getChannelsLength();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFrame.c:		getChannelsLength();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFrame.c:	force_len = getForceLen();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFrame.c:	sense_len = getSenseLen();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFrame.c:	frame->header.force_node = getForceLen();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFrame.c:	frame->header.sense_node = getSenseLen();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTool.c:		result = code();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTool.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTool.c:		res = senseOn();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsTool.c:		res = fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFlash.c:		dev = getDev();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFlash.c:		res = start_flash_dma();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFlash.c:	res = hold_m3();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFlash.c:	res = flash_enable_uvlo_autopowerdown();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFlash.c:	res = flash_unlock();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFlash.c:	res = flash_erase_unlock();
+drivers/input/touchscreen/fts_dual/secondary/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:		 "%s %s: Entering start(), pos = %Ld limit = %d printed = %d \n",
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:	struct fts_ts_info *info = dev_get_drvdata(getDev());
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:					res = fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:					res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:			temp = getForceLen();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:			temp = getSenseLen();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:				flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:				flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:			res = flash_unlock();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:			res = flash_erase_unlock();
+drivers/input/touchscreen/fts_dual/secondary/fts_proc.c:			res = freeCurrentLimitsFile();
+drivers/input/touchscreen/fts_dual/secondary/fts.c: * @see fts_mode_handler()
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:		res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			doClean |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	   flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:		fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_dual/secondary/fts.c: * As soon as the interrupt pin goes low, fts_interrupt_handler() is called and the chain to read and parse the event read from the FIFO start.\n
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			if (fts_fingerprint_is_enable()) {
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			error = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			error = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			if (!fts_fingerprint_is_enable()) {
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	touch_irq_boost();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	ret |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	ret |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	ret = fts_crc_check();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	ret = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:*	@see  fts_fw_update()
+drivers/input/touchscreen/fts_dual/secondary/fts.c:*	@see  production_test_main()
+drivers/input/touchscreen/fts_dual/secondary/fts.c:*	@see fts_event_handler()
+drivers/input/touchscreen/fts_dual/secondary/fts.c:*	@see fts_interrupt_handler()
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	error = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	error = fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:		gesture_type = fts_need_enter_lp_mode();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:		if ((info->glove_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_dual/secondary/fts.c:		if ((info->cover_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_dual/secondary/fts.c:		if ((info->charger_enabled > 0 && isSystemResettedUp())
+drivers/input/touchscreen/fts_dual/secondary/fts.c:		if ((info->grip_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_dual/secondary/fts.c:				fts_update_enter_idle_time();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_update_grip_mode();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_update_touchmode_data();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_update_grip_mode();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_system_reset();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	if (info->gesture_enabled || fts_need_enter_lp_mode())
+drivers/input/touchscreen/fts_dual/secondary/fts.c:		fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			ret = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:				ret = fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:static int fts_get_charging_status()
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	is_charging = !!power_supply_is_system_supplied();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	charging_status = fts_get_charging_status();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	u8 gesture_type = fts_need_enter_lp_mode();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	info->input_dev = input_allocate_device();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	error = fts_proc_init();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:		info->fts_tp_class = get_xiaomi_touch_class();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_read_touchmode_data();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_init_touchmode_data();
+drivers/input/touchscreen/fts_dual/secondary/fts.c:	fts_proc_remove();
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:	tx_num = pdata->touch_data->get_touch_tx_num();
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:	rx_num = pdata->touch_data->get_touch_rx_num();
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:struct class *get_xiaomi_touch_class()
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:struct device *get_xiaomi_touch_dev()
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%c", pdata->touch_data[0]->panel_vendor_read());
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%c", pdata->touch_data[0]->panel_color_read());
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%c", pdata->touch_data[0]->panel_display_read());
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%c", pdata->touch_data[0]->touch_vendor_read());
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%d\n", pdata->touch_data[0]->get_touch_tx_num());
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%d\n", pdata->touch_data[0]->get_touch_rx_num());
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%d\n", pdata->touch_data[0]->get_touch_x_resolution());
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:		return snprintf(buf, PAGE_SIZE, "%d\n", pdata->touch_data[0]->get_touch_y_resolution());
+drivers/input/touchscreen/fts_dual/xiaomi/xiaomi_touch.c:int update_touch_rawdata()
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:struct device *getDev()
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		return &(getClient()->dev);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:struct i2c_client *getClient()
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:struct spi_device *getClient()
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 2);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:	resetErrorList();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 3);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsGesture.c:	res = fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsGesture.c:	ret = fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTest.c:	res |= fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTest.c:		ret = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTest.c:		dev = getDev();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsError.c:	if (getDev() != NULL)
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsError.c:		info = dev_get_drvdata(getDev());
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsError.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsError.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsError.c:	int count = getErrorListCount();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsError.c:	int count = getErrorListCount();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTime.c:	w->start = ktime_get();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTime.c:	w->end = ktime_get();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	ret |= resetErrorList();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	ret |= initTestToDo();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:		resetErrorList();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:		fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:			disable_irq(getClient()->irq);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:			disable_irq_nosync(getClient()->irq);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:			enable_irq(getClient()->irq);
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFrame.c:		getChannelsLength();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFrame.c:		getChannelsLength();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFrame.c:	force_len = getForceLen();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFrame.c:	sense_len = getSenseLen();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFrame.c:	frame->header.force_node = getForceLen();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFrame.c:	frame->header.sense_node = getSenseLen();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTool.c:		result = code();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTool.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTool.c:		res = senseOn();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsTool.c:		res = fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFlash.c:		dev = getDev();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFlash.c:		res = start_flash_dma();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFlash.c:	res = hold_m3();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFlash.c:	res = flash_enable_uvlo_autopowerdown();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFlash.c:	res = flash_unlock();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFlash.c:	res = flash_erase_unlock();
+drivers/input/touchscreen/fts_dual/primary/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:		 "%s %s: Entering start(), pos = %Ld limit = %d printed = %d \n",
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:	struct fts_ts_info *info = dev_get_drvdata(getDev());
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:					res = fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:					res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:			temp = getForceLen();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:			temp = getSenseLen();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:				flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:				flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:			res = flash_unlock();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:			res = flash_erase_unlock();
+drivers/input/touchscreen/fts_dual/primary/fts_proc.c:			res = freeCurrentLimitsFile();
+drivers/input/touchscreen/fts_dual/primary/fts.c: * @see fts_mode_handler()
+drivers/input/touchscreen/fts_dual/primary/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/fts_dual/primary/fts.c:		res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			doClean |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	   flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	force_len = getForceLen();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	sense_len = getSenseLen();
+drivers/input/touchscreen/fts_dual/primary/fts.c:		update_touch_rawdata();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:				fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:				fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts.c:		fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_dual/primary/fts.c: * As soon as the interrupt pin goes low, fts_interrupt_handler() is called and the chain to read and parse the event read from the FIFO start.\n
+drivers/input/touchscreen/fts_dual/primary/fts.c:			if (fts_fingerprint_is_enable()) {
+drivers/input/touchscreen/fts_dual/primary/fts.c:			error = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			error = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			if (!fts_fingerprint_is_enable()) {
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	touch_irq_boost();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			update_touch_rawdata();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			update_ear_sensor();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			update_clicktouch_raw ();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	ret |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	ret |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	ret = fts_crc_check();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	ret = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:*	@see  fts_fw_update()
+drivers/input/touchscreen/fts_dual/primary/fts.c:*	@see  production_test_main()
+drivers/input/touchscreen/fts_dual/primary/fts.c:*	@see fts_event_handler()
+drivers/input/touchscreen/fts_dual/primary/fts.c:*	@see fts_interrupt_handler()
+drivers/input/touchscreen/fts_dual/primary/fts.c:	error = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	error = fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:		gesture_type = fts_need_enter_lp_mode();
+drivers/input/touchscreen/fts_dual/primary/fts.c:		if ((info->glove_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_dual/primary/fts.c:		if ((info->cover_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_dual/primary/fts.c:		if ((info->charger_enabled > 0 && isSystemResettedUp())
+drivers/input/touchscreen/fts_dual/primary/fts.c:		if ((info->grip_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_dual/primary/fts.c:				fts_update_enter_idle_time();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_update_grip_mode();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_update_touchmode_data();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	return getSenseLen();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	return getForceLen();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_system_reset();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	if (info->gesture_enabled || fts_need_enter_lp_mode())
+drivers/input/touchscreen/fts_dual/primary/fts.c:		fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			ret = fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_dual/primary/fts.c:				ret = fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:static int fts_get_charging_status()
+drivers/input/touchscreen/fts_dual/primary/fts.c:	is_charging = !!power_supply_is_system_supplied();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	charging_status = fts_get_charging_status();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	u8 gesture_type = fts_need_enter_lp_mode();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	info->input_dev = input_allocate_device();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	error = fts_proc_init();
+drivers/input/touchscreen/fts_dual/primary/fts.c:		info->fts_tp_class = get_xiaomi_touch_class();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_read_touchmode_data();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_init_touchmode_data();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_dual/primary/fts.c:	fts_proc_remove();
+drivers/input/touchscreen/colibri-vf50-ts.c:	mb();
+drivers/input/touchscreen/hampshire.c: * hampshire_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/hampshire.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/gt9897t/goodix_brl_fwupdate.c:#pragma pack()
+drivers/input/touchscreen/gt9897t/goodix_brl_fwupdate.c:#pragma pack()
+drivers/input/touchscreen/gt9897t/goodix_brl_fwupdate.c:	goodix_fw_sysfs_remove();
+drivers/input/touchscreen/gt9897t/goodix_ts_test.c:	old_fs = get_fs();
+drivers/input/touchscreen/gt9897t/goodix_cfg_bin.c:#pragma pack()
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	goodix_core_module_init();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	goodix_core_module_init();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	pen_dev = input_allocate_device();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:		status = !!power_supply_is_system_supplied();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	goodix_ts_procfs_init();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	goodix_fw_update_uninit();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	core_data->hw_ops = goodix_get_hw_ops();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	goodix_core_module_init();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	goodix_init_touchmode_data();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	if (goodix_unregister_all_module())
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:		goodix_fw_update_uninit();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	ret = goodix_bus_init();
+drivers/input/touchscreen/gt9897t/goodix_ts_core.c:	goodix_bus_exit();
+drivers/input/touchscreen/gt9897t/goodix_brl_hw.c:#pragma pack()
+drivers/input/touchscreen/gt9897t/goodix_ts_gesture.c:	struct kobject *def_kobj = goodix_get_default_kobj();
+drivers/input/touchscreen/gt9897t/goodix_ts_gesture.c:	struct kobj_type *def_kobj_type = goodix_get_default_ktype();
+drivers/input/touchscreen/egalax_ts_serial.c: * egalax_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/egalax_ts_serial.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/cy8ctmg110_ts.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/lpc32xx_ts.c:	input = input_allocate_device();
+drivers/input/touchscreen/migor_ts.c:	input = input_allocate_device();
+drivers/input/touchscreen/cyttsp4_core.c:			/* Incase startup_state do not let startup_() */
+drivers/input/touchscreen/cyttsp4_core.c:	md->input = input_allocate_device();
+drivers/input/touchscreen/focaltech_spi/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_spi.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_spi.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_spi.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_spi.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:		fts_release_all_finger();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:					 fts_esdcheck_get_status() ? "On" : "Off");
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:		fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:		fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:		FTS_ERROR("[EX]: sysfs_create_group() failed!!");
+drivers/input/touchscreen/focaltech_spi/focaltech_ex_fun.c:		FTS_INFO("[EX]: sysfs_create_group() succeeded!!");
+drivers/input/touchscreen/focaltech_spi/focaltech_point_report_check.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_point_report_check.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_point_report_check.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_point_report_check.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_point_report_check.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_point_report_check.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash/focaltech_upgrade_ft3658u.c:	ret = fts_fwupg_enter_into_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash/focaltech_upgrade_ft3658u.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash/focaltech_upgrade_ft3658u.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:		ret = tdata->func->param_init();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	ret = get_test_item_incell();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	ret = get_test_threshold_incell();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	print_thr_incell();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:		ret = tdata->func->param_init();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	ret = get_test_item_mc_sc();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	ret = get_test_threshold_mc_sc();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	print_thr_mc_sc();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:		ret = tdata->func->param_init();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	ret = get_test_item_sc();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	ret = get_test_threshold_sc();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	print_thr_sc();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:	ret = init_node_valid();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:		ret = ini_init_test_incell();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:		ret = ini_init_test_mc_sc();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test_ini.c:		ret = ini_init_test_sc();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = start_scan();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = start_scan();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	ret = start_scan();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:		testresult = tdata->func->start_test();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	ret = fts_test_main_init();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	if (true == fts_test_start()) {
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	fts_test_main_exit();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	enter_work_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:		fts_free_test_memory();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	ret = fts_test_main_init();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:		tp_selftest_result = tdata->func->short_test();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:		tp_selftest_result = tdata->func->open_test();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:		tp_selftest_result = fts_spi_test();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	fts_test_main_exit();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	fts_free_test_memory();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	enter_work_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	enter_work_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	fts_wait_tp_to_valid();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:			fts_hid2std();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		update_clicktouch_raw();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_release_all_finger();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_data->tp_frame.tv = get_timeval(ktime_get());
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_data->tp_frame.tv0 = get_timeval(ktime_get());
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		update_touch_rawdata();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_irq_read_report();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:*        Must be call after fts_gpio_configure() execute,because this function
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:*        will operate reset-gpio which request gpio in fts_gpio_configure()
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	charger_mode = !!power_supply_is_system_supplied();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:static void fts_restore_normal_mode()
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:static void fts_enter_doze_status()
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	fts_irq_disable_sync();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_enter_doze_status();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_restore_normal_mode();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	fts_esdcheck_suspend();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	fts_wait_tp_to_valid();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	fts_esdcheck_resume();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:		fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:		fts_hid2std();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:		return fts_pram_ecc_cal_xor();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	ret = fts_pram_start();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:			ret = fts_pram_init();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	ret = fts_pram_init();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	ret = fts_wait_tp_to_valid();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:		ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:			ret = upg->func->write_pramboot_private();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	ret = fts_fwupg_enter_into_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:		fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:				fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:					fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:							fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:						fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c: *         If get fw via reques_firmware(), please set FTS_FW_REQUEST_SUPPORT
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_spi/focaltech_flash.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:		fts_release_all_finger();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:			fts_esdcheck_get_status() ? "On" : "Off");
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:		fts_irq_enable();
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:		fts_irq_disable();
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:		FTS_ERROR("[EX]: sysfs_create_group() failed!!");
+drivers/input/touchscreen/focaltech_touch/focaltech_ex_fun.c:		FTS_INFO("[EX]: sysfs_create_group() succeeded!!");
+drivers/input/touchscreen/focaltech_touch/focaltech_point_report_check.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_point_report_check.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_point_report_check.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_point_report_check.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_point_report_check.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_point_report_check.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash/focaltech_upgrade_ft3518.c:	ret = fts_fwupg_enter_into_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash/focaltech_upgrade_ft3518.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash/focaltech_upgrade_ft3518.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash/focaltech_upgrade_ft3518.c:	ret = fts_fwupg_enter_into_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash/focaltech_upgrade_ft3518.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash/focaltech_upgrade_ft3518.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	wmb();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	wmb();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:		wmb();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:		wmb();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:		fts_irq_disable();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:		fts_release_all_finger();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:		fts_irq_enable();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_wait_tp_to_valid();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:			fts_hid2std();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:			fts_release_all_finger();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_irq_read_report();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:*        Must be call after fts_gpio_configure() execute,because this function
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:*        will operate reset-gpio which request gpio in fts_gpio_configure()
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_esdcheck_suspend();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:		fts_irq_disable();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_wait_tp_to_valid();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_esdcheck_resume();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:		fts_irq_enable();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	ret = fts_ts_i2c_init();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	ret = fts_ts_spi_init();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_ts_i2c_exit();
+drivers/input/touchscreen/focaltech_touch/focaltech_core.c:	fts_ts_spi_exit();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:		fts_hid2std();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	return fts_pram_ecc_cal_xor();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	ret = fts_pram_start();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:			ret = fts_pram_init();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	ret = fts_pram_init();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	ret = fts_wait_tp_to_valid();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:		ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	ret = fts_hardware_reset_to_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:			ret = upg->func->write_pramboot_private();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	ret = fts_fwupg_enter_into_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:				fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:					fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:							fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:						fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c: *         If get fw via reques_firmware(), please set FTS_FW_REQUEST_SUPPORT
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_flash.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_i2c.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_i2c.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_i2c.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_i2c.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_i2c.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_i2c.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_touch/focaltech_i2c.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_touch/focaltech_i2c.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/mms114.c:		BUG();
+drivers/input/touchscreen/mms114.c:	/* FIXME: switch to device_get_match_data() when available */
+drivers/input/touchscreen/focaltech_3658u/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_gesture.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_gesture.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_spi.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_spi.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_spi.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_spi.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:		fts_release_all_finger();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:					 fts_esdcheck_get_status() ? "On" : "Off");
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_esdcheck.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:		fts_irq_enable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:		fts_irq_disable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:		FTS_ERROR("[EX]: sysfs_create_group() failed!!");
+drivers/input/touchscreen/focaltech_3658u/focaltech_ex_fun.c:		FTS_INFO("[EX]: sysfs_create_group() succeeded!!");
+drivers/input/touchscreen/focaltech_3658u/focaltech_point_report_check.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_point_report_check.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_point_report_check.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_point_report_check.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_point_report_check.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_point_report_check.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash/focaltech_upgrade_ft3658u.c:	ret = fts_fwupg_enter_into_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash/focaltech_upgrade_ft3658u.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash/focaltech_upgrade_ft3658u.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:		ret = tdata->func->param_init();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	ret = get_test_item_incell();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	ret = get_test_threshold_incell();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	print_thr_incell();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:		ret = tdata->func->param_init();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	ret = get_test_item_mc_sc();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	ret = get_test_threshold_mc_sc();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	print_thr_mc_sc();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:		ret = tdata->func->param_init();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	ret = get_test_item_sc();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	ret = get_test_threshold_sc();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	print_thr_sc();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:	ret = init_node_valid();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:		ret = ini_init_test_incell();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:		ret = ini_init_test_mc_sc();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test_ini.c:		ret = ini_init_test_sc();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = start_scan();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = start_scan();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	ret = start_scan();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/supported_ic/focaltech_test_ft3658u.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	ret = start_scan();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	ret = enter_factory_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:		testresult = tdata->func->start_test();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	ret = fts_test_main_init();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	if (true == fts_test_start()) {
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	fts_test_main_exit();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	enter_work_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:		fts_free_test_memory();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_test/focaltech_test.c:	FTS_TEST_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	fts_wait_tp_to_valid();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:			fts_hid2std();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:		fts_read_palm_data();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:			fts_release_all_finger();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:		fts_data->tp_frame.tv = get_timeval(ktime_get());
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:		fts_data->tp_frame.tv0 = get_timeval(ktime_get());
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:		fts_irq_read_report();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:*        Must be call after fts_gpio_configure() execute,because this function
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:*        will operate reset-gpio which request gpio in fts_gpio_configure()
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	is_usb_exist = !!power_supply_is_system_supplied();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:static void fts_restore_normal_mode()
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:			fts_restore_normal_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:		fts_restore_normal_mode();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	fts_init_touchmode_data();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	fts_esdcheck_suspend();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:		fts_irq_disable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	fts_release_all_finger();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	fts_wait_tp_to_valid();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	fts_esdcheck_resume();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:		fts_irq_enable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_core.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:		fts_hid2std();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:		return fts_pram_ecc_cal_xor();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	ret = fts_pram_start();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:			ret = fts_pram_init();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	ret = fts_pram_init();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	ret = fts_wait_tp_to_valid();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:		ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:			ret = upg->func->write_pramboot_private();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	ret = fts_fwupg_enter_into_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	ret = fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:		fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:				fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:					fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:							fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:						fts_fwupg_reset_in_boot();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fwvalid = fts_fwupg_check_fw_valid();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c: *         If get fw via reques_firmware(), please set FTS_FW_REQUEST_SUPPORT
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fts_irq_disable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	fts_irq_enable();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	FTS_FUNC_ENTER();
+drivers/input/touchscreen/focaltech_3658u/focaltech_flash.c:	FTS_FUNC_EXIT();
+drivers/input/touchscreen/ti_am335x_tsc.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:struct device *getDev()
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		return &(getClient()->dev);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:struct i2c_client *getClient()
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:struct spi_device *getClient()
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 2);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:	resetErrorList();
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 3);
+drivers/input/touchscreen/fts_521/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_521/fts_lib/ftsGesture.c:	res = fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_521/fts_lib/ftsGesture.c:	ret = fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTest.c:	res |= fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTest.c:		ret = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTest.c:		dev = getDev();
+drivers/input/touchscreen/fts_521/fts_lib/ftsError.c:	if (getDev() != NULL)
+drivers/input/touchscreen/fts_521/fts_lib/ftsError.c:		info = dev_get_drvdata(getDev());
+drivers/input/touchscreen/fts_521/fts_lib/ftsError.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_lib/ftsError.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_lib/ftsError.c:	int count = getErrorListCount();
+drivers/input/touchscreen/fts_521/fts_lib/ftsError.c:	int count = getErrorListCount();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTime.c:	w->start = ktime_get();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTime.c:	w->end = ktime_get();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	ret |= resetErrorList();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	ret |= initTestToDo();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:		resetErrorList();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:		fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:			disable_irq(getClient()->irq);
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:			disable_irq_nosync(getClient()->irq);
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:			enable_irq(getClient()->irq);
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFrame.c:		getChannelsLength();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFrame.c:		getChannelsLength();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFrame.c:	force_len = getForceLen();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFrame.c:	sense_len = getSenseLen();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFrame.c:	frame->header.force_node = getForceLen();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFrame.c:	frame->header.sense_node = getSenseLen();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTool.c:		result = code();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTool.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTool.c:		res = senseOn();
+drivers/input/touchscreen/fts_521/fts_lib/ftsTool.c:		res = fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFlash.c:		dev = getDev();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFlash.c:		res = start_flash_dma();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFlash.c:	res = hold_m3();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFlash.c:	res = flash_enable_uvlo_autopowerdown();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFlash.c:	res = flash_unlock();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFlash.c:	res = flash_erase_unlock();
+drivers/input/touchscreen/fts_521/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_proc.c:		 "%s %s: Entering start(), pos = %Ld limit = %d printed = %d \n",
+drivers/input/touchscreen/fts_521/fts_proc.c:	struct fts_ts_info *info = dev_get_drvdata(getDev());
+drivers/input/touchscreen/fts_521/fts_proc.c:					res = fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts_proc.c:					res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts_proc.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts_proc.c:			temp = getForceLen();
+drivers/input/touchscreen/fts_521/fts_proc.c:			temp = getSenseLen();
+drivers/input/touchscreen/fts_521/fts_proc.c:				flushFIFO();
+drivers/input/touchscreen/fts_521/fts_proc.c:				flushFIFO();
+drivers/input/touchscreen/fts_521/fts_proc.c:			res = flash_unlock();
+drivers/input/touchscreen/fts_521/fts_proc.c:			res = flash_erase_unlock();
+drivers/input/touchscreen/fts_521/fts_proc.c:			res = freeCurrentLimitsFile();
+drivers/input/touchscreen/fts_521/fts.c: * @see fts_mode_handler()
+drivers/input/touchscreen/fts_521/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/fts_521/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/fts_521/fts.c:		res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_521/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_521/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:			doClean |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	   flushFIFO();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_521/fts.c:		fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_521/fts.c: * As soon as the interrupt pin goes low, fts_interrupt_handler() is called and the chain to read and parse the event read from the FIFO start.\n
+drivers/input/touchscreen/fts_521/fts.c:			if (fts_fingerprint_is_enable()) {
+drivers/input/touchscreen/fts_521/fts.c:			error = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:			error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:			error = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:			error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:			if (!fts_fingerprint_is_enable()) {
+drivers/input/touchscreen/fts_521/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:			fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	touch_irq_boost();
+drivers/input/touchscreen/fts_521/fts.c:	ret |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	ret |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	ret = fts_crc_check();
+drivers/input/touchscreen/fts_521/fts.c:	ret = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:*	@see  fts_fw_update()
+drivers/input/touchscreen/fts_521/fts.c:*	@see  production_test_main()
+drivers/input/touchscreen/fts_521/fts.c:*	@see fts_event_handler()
+drivers/input/touchscreen/fts_521/fts.c:*	@see fts_interrupt_handler()
+drivers/input/touchscreen/fts_521/fts.c:	error = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	error = fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:	fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_521/fts.c:	error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:		gesture_type = fts_need_enter_lp_mode();
+drivers/input/touchscreen/fts_521/fts.c:		if ((info->glove_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_521/fts.c:		if ((info->cover_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_521/fts.c:		if ((info->charger_enabled > 0 && isSystemResettedUp())
+drivers/input/touchscreen/fts_521/fts.c:		if ((info->grip_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_521/fts.c:		fts_update_enter_idle_time();
+drivers/input/touchscreen/fts_521/fts.c:		fts_update_grip_mode();
+drivers/input/touchscreen/fts_521/fts.c:	fts_update_touchmode_data();
+drivers/input/touchscreen/fts_521/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_system_reset();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	if (info->gesture_enabled || fts_need_enter_lp_mode())
+drivers/input/touchscreen/fts_521/fts.c:		fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:			ret = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_521/fts.c:				ret = fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:static int fts_get_charging_status()
+drivers/input/touchscreen/fts_521/fts.c:	is_charging = !!power_supply_is_system_supplied();
+drivers/input/touchscreen/fts_521/fts.c:	charging_status = fts_get_charging_status();
+drivers/input/touchscreen/fts_521/fts.c:	u8 gesture_type = fts_need_enter_lp_mode();
+drivers/input/touchscreen/fts_521/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:		fts_force_calibration();
+drivers/input/touchscreen/fts_521/fts.c:		retval = fts_short_open_test();
+drivers/input/touchscreen/fts_521/fts.c:		retval = fts_i2c_test();
+drivers/input/touchscreen/fts_521/fts.c:	info->input_dev = input_allocate_device();
+drivers/input/touchscreen/fts_521/fts.c:	error = fts_proc_init();
+drivers/input/touchscreen/fts_521/fts.c:		info->fts_tp_class = get_xiaomi_touch_class();
+drivers/input/touchscreen/fts_521/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_521/fts.c:	fts_read_touchmode_data();
+drivers/input/touchscreen/fts_521/fts.c:	fts_init_touchmode_data();
+drivers/input/touchscreen/fts_521/fts.c:	fts_proc_remove();
+drivers/input/touchscreen/wacom_i2c.c:	input = input_allocate_device();
+drivers/input/touchscreen/wacom_i2c.c:	/* Disable the IRQ, we'll enable it in wac_i2c_open() */
+drivers/input/touchscreen/bu21013_ts.c:	mb();
+drivers/input/touchscreen/bu21013_ts.c:	mb();
+drivers/input/touchscreen/pixcir_i2c_ts.c:			"%s: i2c_master_send failed(), ret=%d\n",
+drivers/input/touchscreen/pixcir_i2c_ts.c:			"%s: i2c_master_recv failed(), ret=%d\n",
+drivers/input/touchscreen/pixcir_i2c_ts.c:	mb();	/* Update status before IRQ can fire */
+drivers/input/touchscreen/pixcir_i2c_ts.c:	mb();	/* update status before we synchronize irq */
+drivers/input/touchscreen/tsc40.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/hideep.c:#define SET_FLASH_HWCONTROL()					\
+drivers/input/touchscreen/hideep.c:			"%s: regmap_bulk_write() failed with %d\n",
+drivers/input/touchscreen/hideep.c:	SET_FLASH_HWCONTROL();
+drivers/input/touchscreen/hideep.c:	SET_FLASH_HWCONTROL();
+drivers/input/touchscreen/wacom_w8001.c: * w8001_disconnect() is the opposite of w8001_connect()
+drivers/input/touchscreen/wacom_w8001.c: * w8001_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/wacom_w8001.c:	input_dev_pen = input_allocate_device();
+drivers/input/touchscreen/wacom_w8001.c:	input_dev_touch = input_allocate_device();
+drivers/input/touchscreen/silead.c:	 *    i2c_recover_bus() which will unstuck the I2C-bus. Note the
+drivers/input/touchscreen/zinitix_bt541/zinitix.c:		old_fs = get_fs();
+drivers/input/touchscreen/zinitix_bt541/zinitix.c:	if(!cyttsp5_is_probe_done()) {
+drivers/input/touchscreen/zinitix_bt541/zinitix.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/touchright.c: * tr_disconnect() is the opposite of tr_connect()
+drivers/input/touchscreen/touchright.c: * tr_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/touchright.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/cyttsp_spi.c:		dev_dbg(dev, "%s: spi_sync() error %d, len=%d, op=%d\n",
+drivers/input/touchscreen/of_touchscreen.c: *	axis swap and invert info for use with touchscreen_report_x_y();
+drivers/input/touchscreen/tsc2007_iio.c:			"iio_device_register() failed: %d\n", error);
+drivers/input/touchscreen/pcap_ts.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/tsc2007_core.c:		ts->clear_penirq();
+drivers/input/touchscreen/tsc2007_core.c:		ts->clear_penirq();
+drivers/input/touchscreen/tsc2007_core.c:	mb();
+drivers/input/touchscreen/tsc2007_core.c:	mb();
+drivers/input/touchscreen/tsc2007_core.c:	pdata->exit_platform_hw();
+drivers/input/touchscreen/tsc2007_core.c:			pdata->init_platform_hw();
+drivers/input/touchscreen/cyttsp5/cyttsp5_loader.c:	cmd = cyttsp5_get_commands();
+drivers/input/touchscreen/cyttsp5/cyttsp5_mt_common.c:	md->input = input_allocate_device();
+drivers/input/touchscreen/cyttsp5/cyttsp5_test_device_access_api.c:	preempt_disable();
+drivers/input/touchscreen/cyttsp5/cyttsp5_test_device_access_api.c:	preempt_enable();
+drivers/input/touchscreen/cyttsp5/cyttsp5_device_access.c:	might_sleep();
+drivers/input/touchscreen/cyttsp5/cyttsp5_device_access.c:	cmd = cyttsp5_get_commands();
+drivers/input/touchscreen/cyttsp5/cyttsp5_spi.c:		parade_debug(dev, DEBUG_LEVEL_2, "%s: spi_sync() error %d\n",
+drivers/input/touchscreen/cyttsp5/cyttsp5_i2c.c:	if (cyttsp5_device_access_is_init() &&
+drivers/input/touchscreen/cyttsp5/cyttsp5_i2c.c:			cyttsp5_loader_is_init())
+drivers/input/touchscreen/cyttsp5/cyttsp5_debug.c:	cmd = cyttsp5_get_commands();
+drivers/input/touchscreen/cyttsp5/cyttsp5_btn.c:	bd->input = input_allocate_device();
+drivers/input/touchscreen/cyttsp5/cyttsp5_proximity.c:	pd->input = input_allocate_device();
+drivers/input/touchscreen/cyttsp5/cyttsp5_core.c: * cyttsp5_platform_detect_read()
+drivers/input/touchscreen/cyttsp5/cyttsp5_core.c:				"Function irq_stat() returned %d.\n", retval);
+drivers/input/touchscreen/cyttsp5/cyttsp5_core.c:		"Function irq_stat() undefined.\n");
+drivers/input/touchscreen/cyttsp5/cyttsp5_core.c:	cyttsp5_init_xiaomi_touchfeature();
+drivers/input/touchscreen/eeti_ts.c:	wmb();
+drivers/input/touchscreen/tps6507x-ts.c:/* Need to call tps6507x_adc_standby() after using A/D converter for the
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_set_up_flash_access(); \
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_check_##p_name(); \
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_erase_##p_name(); \
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_write_##p_name(); \
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:#define reflash_show_data() \
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:		retval = reflash_do_reflash();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_get_fw_image();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	reflash_show_data();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	reflash_show_data();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	reflash_show_data();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_parse_fw_image();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_set_up_flash_access();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_set_up_flash_access();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_set_up_flash_access();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_set_up_flash_access();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_set_up_flash_access();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_check_boot_config();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_get_fw_image();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	update_area = reflash_compare_id_info();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_reflash.c:	retval = reflash_do_reflash();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_diagnostics.c:		diag_report();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_testing.c:	retval = testing_##t_name(); \
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_testing.c:	retval = testing_dynamic_range();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_testing.c:	retval = testing_noise();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_testing.c:	testing_open_short_detector_output();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_testing.c:	testing_lockdown_output();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_testing.c:	testing_trx_output();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_testing.c:		testing_report();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:	retval = zeroflash_parse_fw_image();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:	retval = zeroflash_get_fw_image();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:		retval = zeroflash_download_app_config();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:		retval = zeroflash_download_disp_config();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:	zeroflash_download_config();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:	retval = zeroflash_check_uboot();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:	retval = zeroflash_get_fw_image();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:	retval = zeroflash_download_app_fw();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:		zeroflash_download_firmware();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:		zeroflash_download_config();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_zeroflash.c:		zeroflash_download_firmware();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * syna_tcm_report_notifier() - notify occurrence of report received from device
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c:	while (!kthread_should_stop()) {
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c:		schedule();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c:		if (kthread_should_stop())
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * syna_tcm_dispatch_report() - dispatch report received from device
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * syna_tcm_dispatch_response() - dispatch response received from device
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * syna_tcm_dispatch_message() - dispatch message received from device
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * syna_tcm_continued_read() - retrieve entire payload from device
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * syna_tcm_raw_read() - retrieve specific number of data bytes from device
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * syna_tcm_raw_write() - write command/data to device without receiving
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * syna_tcm_read_message() - read message from device
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * If in_buf is not NULL, raw read mode is used and syna_tcm_raw_read() is
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * syna_tcm_write_message() - write message to device and receive response
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c: * If resp_buf is NULL, raw write mode is used and syna_tcm_raw_write() is
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c:	struct drm_panel *active_panel = tcm_get_panel();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c:	struct drm_panel *active_panel = tcm_get_panel();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c:	retval = syna_tcm_bus_init();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_core.c:	syna_tcm_bus_exit();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_free_objects() - Free all touch objects
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_get_report_data() - Retrieve data from touch report
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_parse_report() - Parse touch report
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_report() - Report touch events
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	retval = touch_parse_report();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_set_input_params() - Set input parameters
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_get_input_params() - Get input parameters
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_set_input_dev() - Set up input device
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	touch_hcd->input_dev = input_allocate_device();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	retval = touch_set_input_params();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_set_report_config() - Set touch report configuration
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_check_input_params() - Check input parameters
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c: * touch_set_input_reporting() - Configure touch report and set up new input
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	touch_free_objects();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	retval = touch_set_report_config();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	retval = touch_get_input_params();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	retval = touch_check_input_params();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	retval = touch_set_input_dev();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	retval = touch_set_input_reporting();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:		touch_free_objects();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:			touch_report();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:		retval = touch_set_input_reporting();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:		retval = touch_set_input_reporting();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	touch_free_objects();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_touch.c:	touch_free_objects();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_device.c:	tcm_hcd->report_touch();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_device.c:	retval = device_create_class();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_recovery.c:	retval = recovery_do_recovery();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_recovery.c:	retval = recovery_check_status();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_recovery.c:		retval = recovery_poll_erase_completion();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_recovery.c:	retval = recovery_check_status();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_recovery.c:	retval = recovery_parse_ihex();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_recovery.c:		retval = recovery_set_up_recovery_mode();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_recovery.c:	retval = recovery_erase_flash();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_recovery.c:	retval = recovery_write_flash();
+drivers/input/touchscreen/synaptics_tcm/synaptics_tcm_recovery.c:	retval = recovery_device_reset();
+drivers/input/touchscreen/htcpen.c:	htcpen_dev = input_allocate_device();
+drivers/input/touchscreen/ads7846.c:		return ts->get_pendown_state();
+drivers/input/touchscreen/ads7846.c:		mb();
+drivers/input/touchscreen/ads7846.c:		mb();
+drivers/input/touchscreen/ads7846.c:		ts->wait_for_sync();
+drivers/input/touchscreen/ads7846.c:				BUG();
+drivers/input/touchscreen/ads7846.c:	 * ads7846_get_value() does in-place conversion (including byte swap)
+drivers/input/touchscreen/ads7846.c:	 * touchscreen_parse_properties()
+drivers/input/touchscreen/ads7846.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/sx8654.c:	/* Disable the IRQ, we'll enable it in sx8654_open() */
+drivers/input/touchscreen/dynapro.c: * dynapro_connect() is the routine that is called when someone adds a
+drivers/input/touchscreen/dynapro.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/mainstone-wm97xx.c:	if (machine_is_palmt5() || machine_is_palmtx() || machine_is_palmld()) {
+drivers/input/touchscreen/mainstone-wm97xx.c:	} else if (machine_is_mainstone() && pen_int)
+drivers/input/touchscreen/st/fts_lib/ftsIO.c:struct device *getDev()
+drivers/input/touchscreen/st/fts_lib/ftsIO.c:struct i2c_client *getClient()
+drivers/input/touchscreen/st/fts_lib/ftsGesture.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsGesture.c:			res = reloadCustomGesture();
+drivers/input/touchscreen/st/fts_lib/ftsGesture.c:	ret = fts_enableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:	res |= fts_system_reset();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:	res = ms_compensation_tuning();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:	res = ss_compensation_tuning();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:	res = lp_timer_calibration();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:		res = save_cx_tuning();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:	res = production_test_ito();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:		res = production_test_initialization();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:			res = save_cx_tuning();
+drivers/input/touchscreen/st/fts_lib/ftsTest.c:	dev = getDev();
+drivers/input/touchscreen/st/fts_lib/ftsError.c:	if (getClient() != NULL)
+drivers/input/touchscreen/st/fts_lib/ftsError.c:		info = i2c_get_clientdata(getClient());
+drivers/input/touchscreen/st/fts_lib/ftsError.c:		res = fts_system_reset();
+drivers/input/touchscreen/st/fts_lib/ftsError.c:		dumpErrorInfo();
+drivers/input/touchscreen/st/fts_lib/ftsError.c:		res = fts_system_reset();
+drivers/input/touchscreen/st/fts_lib/ftsTime.c:char *timestamp()
+drivers/input/touchscreen/st/fts_lib/ftsFrame.c:	if (getSenseLen() == 0 || getForceLen() == 0) {
+drivers/input/touchscreen/st/fts_lib/ftsFrame.c:		ret = getChannelsLength();
+drivers/input/touchscreen/st/fts_lib/ftsFrame.c:		ret = getChannelsLength();
+drivers/input/touchscreen/st/fts_lib/ftsFrame.c:		ret = getChannelsLength();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	//ret = fts_enableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	if (fts_enableInterrupt() < OK) {
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	//ret = fts_enableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	if (fts_enableInterrupt() < OK) {
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	//ret = fts_enableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	if (fts_enableInterrupt() < OK) {
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:		result = code();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:			res |= fts_warm_boot();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	res = fts_system_reset();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:		res = senseOn();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:		res = keyOn();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:		res = fts_enableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	ret = fts_enableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsTool.c:	ret = fts_enableInterrupt();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	struct device *dev = getDev();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:		dev = getDev();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	int status = flash_status();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	status = wait_for_flash_ready();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	status = wait_for_flash_ready();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = flash_unlock();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = wait_for_flash_ready();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = wait_for_flash_ready();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = wait_for_flash_ready();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:		res = start_flash_dma();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = fts_warm_boot();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = flash_unlock();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = flash_erase_unlock();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:		res = flash_full_erase();
+drivers/input/touchscreen/st/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/st/fts_driver_test.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts_driver_test.c:		res = fts_system_reset();
+drivers/input/touchscreen/st/fts_driver_test.c:		temp = getForceLen();
+drivers/input/touchscreen/st/fts_driver_test.c:		temp = getSenseLen();
+drivers/input/touchscreen/st/fts_driver_test.c:		flushFIFO();
+drivers/input/touchscreen/st/fts_driver_test.c:		flushFIFO();
+drivers/input/touchscreen/st/fts_driver_test.c:		res = flash_status();
+drivers/input/touchscreen/st/fts_driver_test.c:		res = flash_unlock();
+drivers/input/touchscreen/st/fts_driver_test.c:		res = production_test_ito();
+drivers/input/touchscreen/st/fts_driver_test.c:			res = production_test_initialization();
+drivers/input/touchscreen/st/fts.c:	wmb();
+drivers/input/touchscreen/st/fts.c:	wmb();
+drivers/input/touchscreen/st/fts.c:		wmb();
+drivers/input/touchscreen/st/fts.c:		wmb();
+drivers/input/touchscreen/st/fts.c:	flushFIFO();
+drivers/input/touchscreen/st/fts.c:	flushFIFO();
+drivers/input/touchscreen/st/fts.c:		flushFIFO();
+drivers/input/touchscreen/st/fts.c:		flushFIFO();
+drivers/input/touchscreen/st/fts.c:	flushFIFO();
+drivers/input/touchscreen/st/fts.c:	flushFIFO();
+drivers/input/touchscreen/st/fts.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts.c:	ret |= fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts.c:	res = senseOn();
+drivers/input/touchscreen/st/fts.c:	res = keyOn();
+drivers/input/touchscreen/st/fts.c:	res = senseOff();
+drivers/input/touchscreen/st/fts.c:	res = keyOff();
+drivers/input/touchscreen/st/fts.c:	flushFIFO();
+drivers/input/touchscreen/st/fts.c:	flushFIFO();
+drivers/input/touchscreen/st/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/st/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/st/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts.c:				/*isAnyGestureActive();*/
+drivers/input/touchscreen/st/fts.c:	res |= fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts.c:				/*isAnyGestureActive();*/
+drivers/input/touchscreen/st/fts.c:	res |= fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:		res = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts.c:			res = production_test_ito();
+drivers/input/touchscreen/st/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/st/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/st/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/st/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/st/fts.c:		doClean = fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:		error = fts_system_reset();
+drivers/input/touchscreen/st/fts.c:		error |= fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:		dumpErrorInfo();
+drivers/input/touchscreen/st/fts.c:		error = fts_system_reset();
+drivers/input/touchscreen/st/fts.c:		error |= fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:	error = fts_disableInterrupt();
+drivers/input/touchscreen/st/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/st/fts.c:	ret = fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:		ret = fts_system_reset();
+drivers/input/touchscreen/st/fts.c:		ret |= fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/st/fts.c:	error = fts_system_reset();
+drivers/input/touchscreen/st/fts.c:	error |= fts_enableInterrupt();
+drivers/input/touchscreen/st/fts.c:			ret = enterGestureMode(isSystemResettedDown());
+drivers/input/touchscreen/st/fts.c:			isSystemResettedUp()) || force == 1) {
+drivers/input/touchscreen/st/fts.c:			isSystemResettedUp()) || force == 1) {
+drivers/input/touchscreen/st/fts.c:			isSystemResettedUp()) || force == 1) {
+drivers/input/touchscreen/st/fts.c:			isSystemResettedUp()) || force == 1) {
+drivers/input/touchscreen/st/fts.c:			isSystemResettedUp()) || force == 1) {
+drivers/input/touchscreen/st/fts.c:			isSystemResettedUp()) || force == 1) {
+drivers/input/touchscreen/st/fts.c:			isSystemResettedUp()) || force == 1) {
+drivers/input/touchscreen/st/fts.c:			isSystemResettedUp()) || force == 1) {
+drivers/input/touchscreen/st/fts.c:	fts_system_reset();
+drivers/input/touchscreen/st/fts.c:	info->input_dev = input_allocate_device();
+drivers/input/touchscreen/st/fts.c:	/* flushFIFO(); */
+drivers/input/touchscreen/s3c2410_ts.c:	input_dev = input_allocate_device();
+drivers/input/touchscreen/mk712.c:	mk712_dev = input_allocate_device();
+drivers/input/touchscreen/ar1021_i2c.c:	/* Disable the IRQ, we'll enable it in ar1021_i2c_open() */
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		return &(getClient()->dev);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:struct i2c_client *getClient()
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 2);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:	resetErrorList();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 1);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = i2c_transfer(getClient()->adapter, I2CMsg, 3);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsIO.c:		ret = spi_sync(getClient(), &msg);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsGesture.c:	res = fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsGesture.c:	ret = fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTest.c:	res |= fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTest.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTest.c:		ret = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTest.c:		dev = getDev();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsError.c:	if (getDev() != NULL)
+drivers/input/touchscreen/fts_spi/fts_lib/ftsError.c:		info = dev_get_drvdata(getDev());
+drivers/input/touchscreen/fts_spi/fts_lib/ftsError.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsError.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsError.c:	int count = getErrorListCount();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsError.c:	int count = getErrorListCount();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTime.c:	w->start = ktime_get();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTime.c:	w->end = ktime_get();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	ret |= resetErrorList();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	ret |= initTestToDo();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:		resetErrorList();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:		fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:			disable_irq(getClient()->irq);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:			disable_irq_nosync(getClient()->irq);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	if (getClient() != NULL) {
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:			enable_irq(getClient()->irq);
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsCore.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFrame.c:		getChannelsLength();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFrame.c:		getChannelsLength();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFrame.c:	force_len = getForceLen();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFrame.c:	sense_len = getSenseLen();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFrame.c:	frame->header.force_node = getForceLen();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFrame.c:	frame->header.sense_node = getSenseLen();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTool.c:		result = code();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTool.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTool.c:		res = senseOn();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsTool.c:		res = fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFlash.c:		dev = getDev();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFlash.c:		res = start_flash_dma();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFlash.c:	res = hold_m3();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFlash.c:	res = flash_enable_uvlo_autopowerdown();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFlash.c:	res = flash_unlock();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFlash.c:	res = flash_erase_unlock();
+drivers/input/touchscreen/fts_spi/fts_lib/ftsFlash.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_proc.c:		 "%s %s: Entering start(), pos = %Ld limit = %d printed = %d \n",
+drivers/input/touchscreen/fts_spi/fts_proc.c:	struct fts_ts_info *info = dev_get_drvdata(getDev());
+drivers/input/touchscreen/fts_spi/fts_proc.c:					res = fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_proc.c:					res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts_proc.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts_proc.c:			temp = getForceLen();
+drivers/input/touchscreen/fts_spi/fts_proc.c:			temp = getSenseLen();
+drivers/input/touchscreen/fts_spi/fts_proc.c:				flushFIFO();
+drivers/input/touchscreen/fts_spi/fts_proc.c:				flushFIFO();
+drivers/input/touchscreen/fts_spi/fts_proc.c:			res = flash_unlock();
+drivers/input/touchscreen/fts_spi/fts_proc.c:			res = flash_erase_unlock();
+drivers/input/touchscreen/fts_spi/fts_proc.c:			res = freeCurrentLimitsFile();
+drivers/input/touchscreen/fts_spi/fts.c: * @see fts_mode_handler()
+drivers/input/touchscreen/fts_spi/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/fts_spi/fts.c:	temp = isAnyGestureActive();
+drivers/input/touchscreen/fts_spi/fts.c:		res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_spi/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_spi/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:			res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:			doClean |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	ret = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	   flushFIFO();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	force_len = getForceLen();
+drivers/input/touchscreen/fts_spi/fts.c:	sense_len = getSenseLen();
+drivers/input/touchscreen/fts_spi/fts.c:		update_touch_rawdata();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:				fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:				fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	res = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	flushFIFO();
+drivers/input/touchscreen/fts_spi/fts.c:		fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_spi/fts.c: * As soon as the interrupt pin goes low, fts_interrupt_handler() is called and the chain to read and parse the event read from the FIFO start.\n
+drivers/input/touchscreen/fts_spi/fts.c:			if (fts_fingerprint_is_enable()) {
+drivers/input/touchscreen/fts_spi/fts.c:			error = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:			error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:			error = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:			error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:			if (!fts_fingerprint_is_enable()) {
+drivers/input/touchscreen/fts_spi/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:			fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	touch_irq_boost();
+drivers/input/touchscreen/fts_spi/fts.c:			update_touch_rawdata();
+drivers/input/touchscreen/fts_spi/fts.c:			update_clicktouch_raw ();
+drivers/input/touchscreen/fts_spi/fts.c:	ret |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	ret |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	ret = fts_crc_check();
+drivers/input/touchscreen/fts_spi/fts.c:	ret = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:*	@see  fts_fw_update()
+drivers/input/touchscreen/fts_spi/fts.c:*	@see  production_test_main()
+drivers/input/touchscreen/fts_spi/fts.c:*	@see fts_event_handler()
+drivers/input/touchscreen/fts_spi/fts.c:*	@see fts_interrupt_handler()
+drivers/input/touchscreen/fts_spi/fts.c:	error = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	error = fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_disableInterruptNoSync();
+drivers/input/touchscreen/fts_spi/fts.c:	error |= fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:		gesture_type = fts_need_enter_lp_mode();
+drivers/input/touchscreen/fts_spi/fts.c:		if ((info->glove_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_spi/fts.c:		if ((info->cover_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_spi/fts.c:		if ((info->charger_enabled > 0 && isSystemResettedUp())
+drivers/input/touchscreen/fts_spi/fts.c:		if ((info->grip_enabled == FEAT_ENABLE && isSystemResettedUp())
+drivers/input/touchscreen/fts_spi/fts.c:				fts_update_enter_idle_time();
+drivers/input/touchscreen/fts_spi/fts.c:		fts_update_grip_mode();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_update_touchmode_data();
+drivers/input/touchscreen/fts_spi/fts.c:	return getSenseLen();
+drivers/input/touchscreen/fts_spi/fts.c:	return getForceLen();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_system_reset();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	if (info->gesture_enabled || fts_need_enter_lp_mode())
+drivers/input/touchscreen/fts_spi/fts.c:		fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:			ret = fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:			flushFIFO();
+drivers/input/touchscreen/fts_spi/fts.c:				ret = fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:static int fts_get_charging_status()
+drivers/input/touchscreen/fts_spi/fts.c:	is_charging = !!power_supply_is_system_supplied();
+drivers/input/touchscreen/fts_spi/fts.c:	charging_status = fts_get_charging_status();
+drivers/input/touchscreen/fts_spi/fts.c:	u8 gesture_type = fts_need_enter_lp_mode();
+drivers/input/touchscreen/fts_spi/fts.c:		fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:		fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	info->input_dev = input_allocate_device();
+drivers/input/touchscreen/fts_spi/fts.c:	error = fts_proc_init();
+drivers/input/touchscreen/fts_spi/fts.c:		info->fts_tp_class = get_xiaomi_touch_class();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_enableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_read_touchmode_data();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_init_touchmode_data();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_disableInterrupt();
+drivers/input/touchscreen/fts_spi/fts.c:	fts_proc_remove();
